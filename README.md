@@ -13,8 +13,13 @@
 3. git submodule update
 
 ## To build
-    bash scripts/build.sh
+1. Replace <BOARD_NAME_HERE> in CMakeLists.txt with name of development board
+2. Replace <PROJECT_NAME_HERE> in CMakeLists.txt with project name
+3. bash scripts/build.sh
+
+## To clean
+1. Run 'bash scripts/clean.sh' to delete all build files from the build/ directory
 
 ## To load on Raspberry PICO
 1. Hold BOOTSEL button and plug PICO into USB
-2. Copy build/network_scanner.uf2 to RPI-RP2 Volume
+2. Copy build/<PROJECT_NAME_HERE>.uf2 to RPI-RP2 Volume
